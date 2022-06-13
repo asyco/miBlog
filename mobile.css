@@ -1,0 +1,9 @@
+body {
+    background: #111b21;
+}
+.container {
+    grid-template-areas: "header header header"
+                     "contenido contenido contenido"
+                     "sidebar sidebar sidebar"
+                     "widget-1 widget-1 widget-2"
+                     "footer footer footer"   ;}
