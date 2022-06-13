@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+ 
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+
+    grid-template-areas: "header header header"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "footer footer footer"   ;
+    
+}
+
+.container > div,
+.container .header,
+.container .contenido,
+.container .sidebar,
+.container .footer {
+    background: blanchedalmond;
+    padding: 1.2rem;
+    border-radius: 0.25rem;
+}
+
+.container .header {
+    background: #12203e;
+    color: #fff;
+    grid-area: header;
+}
+
+.container .sidebar {
+    background: aqua;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .widget-1,
+.container .widget-2 {
+    background: rebeccapurple;
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .contenido {
+    grid-area: contenido;
+}
+
+.container .widget-1 {
+    grid-area: widget-1;
+}
+
+.container .widget-2 {
+    grid-area: widget-2;
+}
+
+.container .sidebar {
+    grid-area: sidebar;
+}
+
+.container .footer {
+    grid-area: footer;
+}
