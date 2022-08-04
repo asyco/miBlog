@@ -81,3 +81,10 @@ body {
     grid-area: footer;
 }
 
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
