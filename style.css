@@ -88,3 +88,13 @@ a {
     text-decoration: none;
 }
 
+.miPost {
+    border: 5px solid black;
+    margin-top: 2rem;
+}
+.content_miPost {
+    margin-bottom: 2rem;
+}
+.date_miPost {
+    font-size: small;
+}
