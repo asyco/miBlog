@@ -88,9 +88,7 @@ body {
     border-radius: 10px;
 }
 
-.header_subtitle{
-    font-size: ;
-}
+
 
 .miPost {
     /* border: 5px solid black; */
@@ -106,6 +104,12 @@ body {
     font-size: small;
 }
 
+/* Para postulados como axiomoas, teoremas, lemas etc */
+.postulado {
+    text-align: center;
+    border: 2px solid #12203e;
+    padding: 0.8rem;
+}
 .footer {
     font-size: small;
 }
