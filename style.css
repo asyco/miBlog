@@ -109,6 +109,19 @@ body {
     text-align: center;
     border: 2px solid #12203e;
     padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
+}
+.demostracion_contenido {
+    margin: 0.3rem 0 0.3rem;
+}
+.demostracion_logica {
+    margin-top: 0.5rem;
+}
+.logica_proposicion {
+    margin-bottom: 0.7rem;
+}
+.logica_justificacion {
+    margin-bottom: 0.7rem;
 }
 .footer {
     font-size: small;
