@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Barreto | miBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 775px)">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2><a href="index.html">Álef Blog</a> </h2>
+            <h3 class="header_subtitle">Un blog más...</h3>
+        </header>
+        <main class="contenido">
+            <div class="miPost">
+                <h2 class="title_miPost"><a href="axiomas_teoc_1.html"> Axiomas de la Teoría de Conjuntos - Parte 1</a></h2>
+                <div class="date_miPost">Jueves, 04 de Agosto de 2022</div>
+                <div class="content_miPost">
+                    <br>
+                    <p> 
+                        La teoría axiomática de conjuntos, como su nombre nos puede sugerir, se fundamenta en una serie de postulados, que para nuestra conveniencia consideramos como una verdad clara y evidente. A partir de este sistema base, es posible demostrar de manera lógica proposiciones más complejas, que nos permitan comprender las propiedades básicas de objetos matemáticos, como los números naturales, funciones de variable real, entre otros.
+                    </p>
+                    <div class="postulado">
+                        <h3>Axioma de Existencia</h3>
+                        <i>Existe un conjunto, el cual no tiene elementos</i>
+                    </div>
+                    <p>
+                        Mediante este axioma, se postula la existencia del conjunto vacío \(\phi \), también representado por { } y representa colecciones sin elementos.
+                    </p>
+                    <p>
+                        Un ejemplo de esto, es el conjunto de numeros mayores que 2 que son pares y primos al mismo tiempo.
+                    </p>
+                    <div style="text-align: center; margin: 0.8rem 0 0.8rem;">
+                        <b>
+                            <i>
+                                {x : x > 2, primo y par}
+                            </i>
+                        </b>
+                        
+                    </div>
+                    <p>
+                        Dado que un número par siempre tendrá como divisor al 2 (Además del 1 y a él mismo), y un número primo por definición tiene únicamente como divisores al 1 y a él mismo, es imposible la existencia de un número que cumpla ambas condiciones simultáneamente y sea mayor que 2. Por tanto se tiene:
+                    </p>
+                    <div style="text-align: center; margin: 0.8rem 0 0.8rem;">
+                        <b>
+                            <i>
+                                \(\phi \) = {x : x > 2, primo y par}
+                            </i>
+                        </b> 
+                    </div>
+                    <div class="postulado">
+                        <h3>Axioma de Extensionalidad</h3>
+                        <i>Sean A y B dos conjuntos cualesquiera, si cada elemento de A es elemento de B y cada elemento de B es a su vez elemento de A, se tiene que A = B.</i>
+                    </div>
+                    <p>
+                        Este axioma quiere decir, que si dos conjuntos tienen los mismos elementos, entonces estos conjuntos son iguales.
+                    </p>
+                    <p>
+                        A partir del <b>Axioma de Extensionalidad</b>, es posible demostrar que el conjunto vacío, que se propuso anteriormente en el <b>Axioma de Existencia</b>, es único como se muestra a continuación.
+                    </p>
+                    <div class="postulado">
+                        <h3>Lema</h3>
+                        <i>El conjunto vacío es único</i>
+                    </div>
+
+                    <div class="demostracion">
+                        <div class="demostracion_titulo">
+                            <b><i>Demostración: </i></b> 
+                        </div>
+                        <div class="demostracion_contenido">
+                            <p>
+                                Este lema es equivalente a decir que cualesquiera dos conjuntos sin elementos, son iguales o son el mismo.
+                            </p> 
+                            <p>
+                                Sean A y B dos conjuntos sin elementos, podemos afirmar que todo elemento de A es elemento de B.
+                                En el lenguaje simbólico formal usado en la notación matemática, tenemos:
+                            </p>
+                            <br>
+                            <div class="demostracion_logica">
+                                <div class="logica_proposicion">\(x \in A \Rightarrow x \in B \)</div>
+                                <div class="logica_justificacion">\( \equiv < x \in A \equiv False >\)</div>
+                                <div class="logica_justificacion">\(< p \Rightarrow q \equiv \neg p \lor q>\)</div>
+                                <div class="logica_proposicion">\( (True) \)  v  \( (x \in B) \)</div>
+                                <div class="logica_justificacion">\( \equiv < True \lor p \equiv True >\)</div>
+                                <div class="logica_proposicion">\(True \) </div>
+                            </div>
+                            <P>
+                                De la misma manera, obtenenos la implicación en el sentido contrario, es decir:
+                                <div class="demostracion_logica">
+                                    <div class="logica_proposicion">\(x \in B \Rightarrow x \in A \)</div>
+                                    <div class="logica_demostracion"> \(\therefore A=B \)</div>
+                                </div>
+                            </P>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer_miPost">
+                    Tags: Teoría de conjuntos, Lógica.
+                </div>
+
+            </div>
+
+            
+            
+        </main>
+        <aside class="sidebar">
+            <img class= "construction" src="./imagenes/under_construction.png" alt="">
+        </aside>
+
+        <div class="widget-1">
+            <h3>WIDGET 1</h3>
+        </div>
+        <div class="widget-2">
+            <h3>WIDGET 2</h3>
+        </div>
+
+        <footer class="footer">
+            <h3>Copyright © 2022 ANDWS. All rights reserved - Términos legales.</h3>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
